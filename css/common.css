@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,10 +9,13 @@ header {
           flex-direction: column;
 }
 
-html, body {
+html,
+body {
   max-width: 1020px;
   width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 input {
@@ -21,6 +25,11 @@ input {
 a {
   text-decoration: none;
   color: black;
+}
+
+div,
+p {
+  font-size: 19px;
 }
 
 .slick01 {
@@ -131,5 +140,93 @@ a {
           justify-content: space-evenly;
   background-color: #ffe18cb8;
   padding: 10px;
+}
+
+.main-block_01 > p {
+  text-align: center;
+}
+
+.main-block_01_2column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-block_01_2column > img {
+  width: 50%;
+}
+
+.main-block_01_4column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-block_01_4column > .main-block_content {
+  width: 25%;
+}
+
+.main-block_02 > p {
+  text-align: center;
+}
+
+.main-block_02_2column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-block_02_2column > div {
+  text-align: center;
+}
+
+.main-block_banner > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-block_notice {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.main-block_notice_header {
+  text-align: center;
+}
+
+.main-block_notice_content > p {
+  margin: 20px 0;
+}
+
+footer > div > p {
+  line-height: 42px;
+}
+
+.footer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_bottom {
+  text-align: center;
+  margin: 20px 0;
 }
 /*# sourceMappingURL=common.css.map */

@@ -1,22 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
 header {
     display: flex;
     flex-direction: column;
 }
 
-html,body{
+html,
+body {
     max-width: 1020px;
     width: 100%;
-   
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0 auto;
+    overflow-x: hidden;
 }
+
 input {
     border-style: solid;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.slick01{
+
+div,
+p {
+    font-size: 19px;
+}
+
+.slick01 {
     width: 50%;
 }
 
@@ -81,7 +93,7 @@ a{
             margin: 6px 0;
         }
 
-        &_sub02{
+        &_sub02 {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
@@ -89,5 +101,89 @@ a{
             padding: 10px;
         }
     }
+
 }
 
+
+.main-block_01>p {
+    text-align: center;
+}
+
+.main-block_01_2column {
+    display: flex;
+
+    &>img {
+        width: 50%;
+    }
+}
+
+.main-block_01_4column {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>.main-block_content {
+        width: 25%;
+    }
+}
+
+.main-block_02 {
+    &>p {
+        text-align: center;
+    }
+
+    &_2column {
+        display: flex;
+        justify-content: space-between;
+
+        &>div {
+            text-align: center;
+        }
+    }
+}
+
+.main-block_banner {
+    &>div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.main-block_notice {
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    overflow-y: scroll;
+
+    &_header {
+        text-align: center;
+    }
+
+    &_content {
+        &>p {
+            margin: 20px 0;
+        }
+
+    }
+}
+
+footer {
+    &>div>p {
+        line-height: 42px;
+
+    }
+
+
+}
+
+.footer {
+    &_info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_bottom {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
