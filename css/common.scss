@@ -29,7 +29,9 @@ p {
 }
 
 .slick01 {
+    max-width: 1020px;
     width: 50%;
+    margin: 0 auto;
 }
 
 .icon {
@@ -105,8 +107,12 @@ p {
 }
 
 
-.main-block_01>p {
-    text-align: center;
+.main-block_01 {
+    margin: 50px 0;
+
+    &>p {
+        text-align: center;
+    }
 }
 
 .main-block_01_2column {
@@ -127,6 +133,8 @@ p {
 }
 
 .main-block_02 {
+    margin: 50px 0;
+
     &>p {
         text-align: center;
     }
@@ -142,6 +150,7 @@ p {
 }
 
 .main-block_banner {
+    margin: 10px 0 30px 0;
     &>div {
         display: flex;
         justify-content: space-evenly;
@@ -154,6 +163,8 @@ p {
     width: 100%;
     text-align: center;
     overflow-y: scroll;
+    margin: 20px 0px 50px 0;
+
 
     &_header {
         text-align: center;
@@ -168,6 +179,15 @@ p {
 }
 
 footer {
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+
+    &>div {
+        padding: 0px 60px;
+
+    }
+
     &>div>p {
         line-height: 42px;
 
@@ -179,11 +199,74 @@ footer {
 .footer {
     &_info {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     &_bottom {
         text-align: center;
         margin: 20px 0;
     }
+}
+
+.sub_title {
+    color: #505050;
+    padding: 0.5em;
+    display: inline-block;
+    line-height: 1.3;
+    background: #dbebf8;
+    vertical-align: middle;
+    border-radius: 25px;
+    width: 25%;
+    display: flex;
+    margin: 0 auto;
+
+    &:before {
+        content: '●';
+        color: white;
+        margin-right: 8px;
+    }
+}
+
+.notice {
+    &_container {
+        margin: 15px 0;
+        text-align: initial;
+    }
+
+    &_block {}
+
+    &_date {
+        font-weight: bold;
+
+    }
+
+    &_label {
+        background-color: black;
+        color: #fff;
+        border-radius: 4px;
+        padding: 4px 10px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    &_text {}
+}
+
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
 }
